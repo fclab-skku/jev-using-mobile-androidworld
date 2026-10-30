@@ -1,0 +1,5 @@
+httpx[http2]>=0.28
+pyyaml>=6.0
+python-dotenv>=1.0
+pillow>=10.0
+# android_world: install from the clone (see README)

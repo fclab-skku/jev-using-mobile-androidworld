@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+runs/
+android_world/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+*.log
+*.pem
+.DS_Store
+.idea/
+.vscode/

@@ -1,0 +1,370 @@
+{
+ "captured_at": "2026-09-30T19:49:48",
+ "build": "google/sdk_gphone64_arm64/emu64a:13/TE1A.240213.009/12342917:userdebug/dev-keys",
+ "snapshot_digest": {
+  "com.example.androidworld": "d41d8cd98f00b204e9800998ecf8427e",
+  "com.dimowner.audiorecorder": "067f99337f3127393f91e01ce96b877f",
+  "com.android.camera2": "9fb731e7830f792bbbadbb6655f12547",
+  "com.android.chrome": "bc0f3184b938a654345348fd517858e4",
+  "ca.zgrs.clipper": "d41d8cd98f00b204e9800998ecf8427e",
+  "com.google.android.deskclock": "ae05aa63c1c419b77614351baf6d46ba",
+  "com.google.android.contacts": "cb07c0bb304e829fc1bb4c61f41de901",
+  "com.google.android.dialer": "d41d8cd98f00b204e9800998ecf8427e",
+  "com.arduia.expense": "0342a4b61c972044cf4fbca0a5f98275",
+  "com.google.android.documentsui": "d41d8cd98f00b204e9800998ecf8427e",
+  "net.cozic.joplin": "76898250f531568385b7d2617ab4f183",
+  "net.gsantner.markor": "cb3fd79b97e128d4abbeded3bb083b44",
+  "com.google.androidenv.miniwob": "d41d8cd98f00b204e9800998ecf8427e",
+  "de.dennisguse.opentracks": "57ffbaac12d8c4fb9777ebdff8aa749e",
+  "net.osmand": "9993b2b6b9ae9867e6ed5632bb243999",
+  "com.flauschcode.broccoli": "764cffb7009256c3826fbc9ca064baf5",
+  "code.name.monkey.retromusic": "571a0c41b48769f5a17fa8731802e62f",
+  "com.android.settings": "d41d8cd98f00b204e9800998ecf8427e",
+  "com.simplemobiletools.calendar.pro": "34d47c233d41c894900323f5da1067c2",
+  "com.simplemobiletools.draw.pro": "d41d8cd98f00b204e9800998ecf8427e",
+  "com.simplemobiletools.gallery.pro": "faf5460681f6c384dfb3df33a0dd7772",
+  "com.simplemobiletools.smsmessenger": "a6e0e6218c41276656b44747933520c9",
+  "org.tasks": "2577397669ab6e22d2c7e300f2e8070f",
+  "org.videolan.vlc": "2191936574b0e02c1aa3efb2784bd647"
+ },
+ "screens": {
+  "android world": {
+   "package": "com.example.androidworld",
+   "foreground": "com.example.androidworld",
+   "flagged": [],
+   "texts": [
+    ":"
+   ]
+  },
+  "audio recorder": {
+   "package": "com.dimowner.audiorecorder",
+   "foreground": "com.dimowner.audiorecorder",
+   "flagged": [
+    "Get started",
+    "Welcome to a simple and fast application"
+   ],
+   "texts": [
+    "Get started",
+    "Audio Recorder",
+    "Welcome to a simple and fast application"
+   ]
+  },
+  "camera": {
+   "package": "com.android.camera2",
+   "foreground": "com.android.camera2",
+   "flagged": [],
+   "texts": [
+    "Options",
+    "Shutter",
+    "MODE LIST",
+    "FILMSTRIP",
+    "Z-",
+    "Z+",
+    "Options"
+   ]
+  },
+  "chrome": {
+   "package": "com.android.chrome",
+   "foreground": "com.android.chrome",
+   "flagged": [
+    "To get personalized content suggested by Google, sign in and turn on sync",
+    "Update available. More options"
+   ],
+   "texts": [
+    "Home",
+    "Switch or close tabs",
+    "Update available. More options",
+    "Search or type web address",
+    "Start voice search",
+    "Search with your camera using Google Lens",
+    "Navigate: 인벤: m.inven.co.kr",
+    "Navigate: YouTube: m.youtube.com"
+   ]
+  },
+  "clipper": {
+   "package": "ca.zgrs.clipper",
+   "foreground": "ca.zgrs.clipper",
+   "flagged": [],
+   "texts": [
+    "Clipper",
+    "Clipper service is started.",
+    "You can now copy to or paste from clipboard using the following commands in adb shell:\n \n 1. am broadcast -a clipper.set -e text 'This may be pasted now' \n 2. am broadcast -a clipper.get"
+   ]
+  },
+  "clock": {
+   "package": "com.google.android.deskclock",
+   "foreground": "com.google.android.deskclock",
+   "flagged": [],
+   "texts": [
+    "Clock",
+    "More options",
+    "Add city",
+    "Alarm",
+    "Clock",
+    "Timer",
+    "Stopwatch",
+    "Bedtime"
+   ]
+  },
+  "contacts": {
+   "package": "com.google.android.contacts",
+   "foreground": "com.google.android.contacts",
+   "flagged": [],
+   "texts": [
+    "Create contact",
+    "Contacts",
+    "Highlights",
+    "Fix & manage",
+    "Open navigation drawer",
+    "Signed in as Device\nAccount and settings.",
+    "No contacts yet",
+    "Phone contacts"
+   ]
+  },
+  "dialer": {
+   "package": "com.google.android.dialer",
+   "foreground": "com.google.android.dialer",
+   "flagged": [],
+   "texts": [
+    "Call your favorite contacts with just one tap",
+    "Add a favorite",
+    "key pad",
+    "Favorites",
+    "Recents",
+    "Contacts",
+    "Start voice search",
+    "More options"
+   ]
+  },
+  "pro expense": {
+   "package": "com.arduia.expense",
+   "foreground": "com.arduia.expense",
+   "flagged": [],
+   "texts": [
+    "Home",
+    "Totals",
+    "SEP 27 - OCT 4",
+    "INCOME",
+    "0",
+    "USD",
+    "OUTCOME",
+    "0"
+   ]
+  },
+  "files": {
+   "package": "com.google.android.documentsui",
+   "foreground": "com.google.android.documentsui",
+   "flagged": [],
+   "texts": [
+    "Show roots",
+    "Downloads",
+    "Search",
+    "More options",
+    "Files in Downloads",
+    "List view",
+    "Images",
+    "Audio"
+   ]
+  },
+  "joplin": {
+   "package": "net.cozic.joplin",
+   "foreground": "net.cozic.joplin",
+   "flagged": [],
+   "texts": [
+    "Show roots",
+    "Downloads",
+    "Search",
+    "More options",
+    "Files in Downloads",
+    "List view",
+    "Images",
+    "Audio"
+   ]
+  },
+  "markor": {
+   "package": "net.gsantner.markor",
+   "foreground": "net.gsantner.markor",
+   "flagged": [],
+   "texts": [
+    "Create a new file or folder",
+    "Markor",
+    "Go to",
+    "Sort by",
+    "Search",
+    "More options",
+    "Files",
+    "To-Do"
+   ]
+  },
+  "miniwob": {
+   "package": "com.google.androidenv.miniwob",
+   "foreground": "com.google.androidenv.miniwob",
+   "flagged": [],
+   "texts": []
+  },
+  "open tracks sports tracker": {
+   "package": "de.dennisguse.opentracks",
+   "foreground": "de.dennisguse.opentracks",
+   "flagged": [
+    "Start recording your next adventure here"
+   ],
+   "texts": [
+    "Navigate up",
+    "OpenTracks",
+    "Markers",
+    "More options",
+    "Start recording your next adventure here",
+    "Arrow",
+    "Record",
+    "Search"
+   ]
+  },
+  "osmand": {
+   "package": "net.osmand",
+   "foreground": "net.osmand",
+   "flagged": [],
+   "texts": [
+    "Map",
+    "Configure map",
+    "North is up",
+    "Search",
+    "Back to menu",
+    "Route",
+    "200 mi",
+    "200 mi"
+   ]
+  },
+  "broccoli app": {
+   "package": "com.flauschcode.broccoli",
+   "foreground": "com.flauschcode.broccoli",
+   "flagged": [],
+   "texts": [
+    "Open navigation drawer",
+    "Recipes",
+    "Categories",
+    "Search",
+    "Recipes",
+    "No recipes found.",
+    "create a new recipe",
+    "import a recipe from a website"
+   ]
+  },
+  "retro music": {
+   "package": "code.name.monkey.retromusic",
+   "foreground": "code.name.monkey.retromusic",
+   "flagged": [
+    "Welcome,"
+   ],
+   "texts": [
+    "Navigate up",
+    "Retro Music",
+    "Settings",
+    "For you",
+    "Songs",
+    "Albums",
+    "Artists",
+    "Playlists"
+   ]
+  },
+  "settings": {
+   "package": "com.android.settings",
+   "foreground": "com.android.settings",
+   "flagged": [],
+   "texts": [
+    "Profile picture, double tap to open Google Account",
+    "Settings",
+    "Search settings",
+    "Network & internet",
+    "Mobile, Wi‑Fi, hotspot",
+    "Connected devices",
+    "Bluetooth, pairing",
+    "Apps"
+   ]
+  },
+  "simple calendar pro": {
+   "package": "com.simplemobiletools.calendar.pro",
+   "foreground": "com.simplemobiletools.calendar.pro",
+   "flagged": [],
+   "texts": [
+    "Search",
+    "Change view",
+    "Settings",
+    "More options",
+    "New Event",
+    "September"
+   ]
+  },
+  "simple draw pro": {
+   "package": "com.simplemobiletools.draw.pro",
+   "foreground": "com.simplemobiletools.draw.pro",
+   "flagged": [],
+   "texts": [
+    "Save",
+    "Clear",
+    "Share",
+    "More options",
+    "Bucket fill",
+    "Eraser",
+    "Eyedropper",
+    "Change color"
+   ]
+  },
+  "simple gallery pro": {
+   "package": "com.simplemobiletools.gallery.pro",
+   "foreground": "com.simplemobiletools.gallery.pro",
+   "flagged": [],
+   "texts": [
+    "No media files have been found. You can solve it by adding the folders containing media files manually.",
+    "Add folder",
+    "Search",
+    "Search folders",
+    "Open camera",
+    "Show all folders content",
+    "More options"
+   ]
+  },
+  "simple sms messenger": {
+   "package": "com.simplemobiletools.smsmessenger",
+   "foreground": "com.simplemobiletools.smsmessenger",
+   "flagged": [],
+   "texts": [
+    "Search",
+    "Search",
+    "Settings",
+    "About",
+    "More options",
+    "No stored conversations have been found",
+    "Start a conversation"
+   ]
+  },
+  "tasks": {
+   "package": "org.tasks",
+   "foreground": "org.tasks",
+   "flagged": [],
+   "texts": [
+    "My Tasks",
+    "Search",
+    "Voice input",
+    "Sort",
+    "More options",
+    "Create new task",
+    "There are no tasks here."
+   ]
+  },
+  "vlc": {
+   "package": "org.videolan.vlc",
+   "foreground": "org.videolan.vlc",
+   "flagged": [],
+   "texts": [
+    "Search…",
+    "Sort by…",
+    "More options",
+    "Loading",
+    "...",
+    "Video",
+    "Audio",
+    "Browse"
+   ]
+  }
+ }
+}

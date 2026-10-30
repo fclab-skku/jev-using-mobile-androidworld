@@ -1,0 +1,43 @@
+# API providers. Agents reference these by name through provider slots (agents.yaml).
+# kind: systemone -> POST {base_url}/systemone ; chat -> POST {base_url}/chat/completions
+# `model` always overrides the model field in the request body.
+# `body_defaults` are merged under the agent's own request body.
+
+openrouter_jev:            # Jev via OpenRouter's System One drop-in route (pinned version)
+  kind: systemone
+  base_url: https://openrouter.ai/api/v1
+  api_key_env: OPENROUTER_API_KEY
+  model: typesafe/jev-1.13
+
+openrouter_jev114:         # Jev 1.14 (2026-10-14), pinned
+  kind: systemone
+  base_url: https://openrouter.ai/api/v1
+  api_key_env: OPENROUTER_API_KEY
+  model: typesafe/jev-1.14
+
+openrouter_jev114_img:     # Jev 1.14 + image opt-in header (used by the vision agent)
+  kind: systemone
+  base_url: https://openrouter.ai/api/v1
+  api_key_env: OPENROUTER_API_KEY
+  model: typesafe/jev-1.14
+  headers: {TypeSafe-Danger-Zone-Images: "true"}
+
+openrouter_text_mercury:   # text helper: TYPE_TEXT values, app names, answers
+  kind: chat
+  base_url: https://openrouter.ai/api/v1
+  api_key_env: OPENROUTER_API_KEY
+  model: inception/mercury-2.5
+  total_timeout: 20          # seconds per attempt, then retry (OpenRouter can hold a dead request ~120 s; normal p99 is 7 s)
+
+# Offline mocks (no network, deterministic random answers) for pipeline tests.
+mock_jev:
+  kind: mock_systemone
+  base_url: http://mock
+  api_key_env: NONE
+  model: mock-jev
+
+mock_text:
+  kind: mock_chat
+  base_url: http://mock
+  api_key_env: NONE
+  model: mock-chat

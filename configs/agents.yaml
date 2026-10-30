@@ -1,0 +1,43 @@
+# Registered agents. `class` is "module:Class" implementing bench.agents.base.AgentWrapper.
+# `providers` maps the agent's slots to provider names in providers.yaml (override with --provider slot=name).
+# `params` are agent-specific (override with --param key=value).
+
+mobile_jev_hybrid_aw:      # vision agent: Jev 1.14 sees the screen only as the screenshot; elements only as answer options (bench/agents/aw/mobile_jev_hybrid_aw.py)
+  class: bench.agents.aw.mobile_jev_hybrid_aw:MobileJevHybridAwAgent
+  providers:
+    decision: openrouter_jev114_img
+    text: openrouter_text_mercury
+  params:
+    # pipeline settings (same as mobile_jev_aw)
+    app_source: list:device_apps
+    enter: keyboard_enter
+    answer: "on"
+    answer_on_finish: "off"
+    input_mode: native
+    row_checked_from_child: true
+    scroll_region: element
+    app_match: relaxed
+    type_requires_focus: false
+    clear_before_type: true
+    needs_input_retries: 1
+    # vision request
+    history: labels                # labels ("Tap Trash." + screenChanged) | coords (operation + touch point only)
+    rules: vision                  # vision | upstream (text-only rules)
+
+mobile_jev_aw:             # text-only reference: same pipeline, Jev reads the element list instead of the screenshot (bench/agents/aw/mobile_jev_aw.py)
+  class: bench.agents.aw.mobile_jev_aw:MobileJevAwAgent
+  providers:
+    decision: openrouter_jev
+    text: openrouter_text_mercury
+  params:
+    app_source: list:device_apps
+    enter: keyboard_enter
+    answer: "on"
+    answer_on_finish: "off"
+    input_mode: native             # native (= tap_type) | tap_type | type_only | tap_type_enter
+    row_checked_from_child: true   # a settings row that owns one Switch/CheckBox carries its checked state (AW-9) | false: upstream (state dropped)
+    scroll_region: element         # swipe inside the scrollable region Jev chose (AW-11) | screen: from the screen centre
+    app_match: relaxed             # relaxed: 2+ consecutive words of the app name in the goal count as "named" (AW-12) | exact
+    type_requires_focus: false     # false: TYPE_TEXT on any editable field, Jev picks the field (AW forests carry no focus, AW-1) | true: upstream, focused field only (native = type_only)
+    clear_before_type: true
+    needs_input_retries: 1

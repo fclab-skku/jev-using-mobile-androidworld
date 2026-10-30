@@ -1,0 +1,62 @@
+{
+  "tasks": 116,
+  "tasks_completed": 113,
+  "tasks_errored": 3,
+  "success": 41,
+  "success_rate": 0.3628,
+  "success_rate_all": 0.3534,
+  "errored_tasks": [
+    "TasksDueNextWeek",
+    "TasksDueOnDate",
+    "TasksHighPriorityTasks"
+  ],
+  "steps": 1216,
+  "end_reasons": {
+    "done": 45,
+    "stuck": 21,
+    "budget_exhausted": 16,
+    "blocked": 11,
+    "loading_timeout": 8,
+    "answer": 12
+  },
+  "final_actions": {
+    "done": 45,
+    "click": 15,
+    "blocked": 11,
+    "open_app": 1,
+    "wait": 3,
+    "answer": 12,
+    "scroll": 1,
+    "long_press": 3,
+    "input_text": 1,
+    "needs_input": 5
+  },
+  "agent_errors": 0,
+  "usage": {
+    "decision": {
+      "input_tokens": 6942112,
+      "output_tokens": 610460,
+      "cost": 0.2915687040000003
+    },
+    "text": {
+      "prompt_tokens": 100550,
+      "completion_tokens": 30170,
+      "total_tokens": 130720,
+      "cost": 0.008547500000000003
+    }
+  },
+  "timing": {
+    "started": "2026-10-29T18:23:39",
+    "finished": "2026-10-29T19:22:20",
+    "sessions": 1,
+    "wall_seconds": 3520.9,
+    "task_seconds_total": 3367.1,
+    "task_seconds_mean": 29.0,
+    "step_seconds_total": 2831.1,
+    "step_seconds_mean": 2.33,
+    "api_seconds": {
+      "decision": 580.4,
+      "text": 201.0
+    }
+  }
+}
